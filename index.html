@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyme Hospital and Maternity | Compassionate Care in Uyo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            color: #374151; /* Tailwind gray-700 */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 100, 100, 0.8), rgba(0, 100, 100, 0.8)), url('https://images.unsplash.com/photo-1581093458791-9a6680c1bf10?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-primary {
+            background-color: #FF7F50; /* Coral */
+            color: white;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1);
+        }
+        .btn-primary:hover {
+            background-color: #E57245;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(0,0,0,0.15);
+        }
+        .section-title {
+            color: #008080; /* Teal Blue */
+        }
+        .teal-text {
+            color: #008080;
+        }
+        .coral-text {
+            color: #FF7F50;
+        }
+
+        /* Animation Styles */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in-up {
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        .is-visible {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-3">
+                <div class="h-10 w-10 bg-teal-500 rounded-full flex items-center justify-center">
+                   <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <span class="text-2xl font-bold section-title">Dyme Hospital</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-600 hover:teal-text font-semibold">Home</a>
+                <a href="#about" class="text-gray-600 hover:teal-text font-semibold">About Us</a>
+                <a href="#services" class="text-gray-600 hover:teal-text font-semibold">Services</a>
+                <a href="#contact" class="text-gray-600 hover:teal-text font-semibold">Contact</a>
+            </div>
+            <a href="#appointment" class="hidden md:block btn-primary font-bold py-2 px-6 rounded-full">Book Appointment</a>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:teal-text font-semibold">Home</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:teal-text font-semibold">About Us</a>
+            <a href="#services" class="block py-2 text-gray-600 hover:teal-text font-semibold">Services</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:teal-text font-semibold">Contact</a>
+            <a href="#appointment" class="block mt-4 text-center btn-primary font-bold py-2 px-6 rounded-full">Book Appointment</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section text-white">
+            <div class="container mx-auto px-6 py-28 md:py-40 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 animate-fade-in-up">Your Partner in Lifelong Health.</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto animate-fade-in-up" style="animation-delay: 0.2s;">Providing compassionate General and Maternity care for the Uyo community. Your health is our commitment.</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <a href="#appointment" class="btn-primary font-bold py-3 px-8 rounded-full text-lg w-full sm:w-auto">Book an Appointment</a>
+                    <a href="#services" class="bg-white text-teal-600 font-bold py-3 px-8 rounded-full text-lg w-full sm:w-auto hover:bg-gray-100 transition duration-300">Our Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold section-title fade-in-up">Why Choose Dyme Hospital?</h2>
+                    <p class="text-gray-600 mt-3 max-w-2xl mx-auto fade-in-up">Dedicated care, focused on you and your family's well-being.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="text-center p-8 bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 fade-in-up">
+                        <div class="flex justify-center items-center mb-4 bg-teal-100 rounded-full h-16 w-16 mx-auto"><svg class="h-8 w-8 teal-text" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg></div>
+                        <h3 class="text-xl font-bold mb-2">Patient-Centered Care</h3>
+                        <p>We listen. Your health, comfort, and well-being are our top priorities from the moment you walk in.</p>
+                    </div>
+                    <div class="text-center p-8 bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 fade-in-up" style="animation-delay: 0.2s;">
+                        <div class="flex justify-center items-center mb-4 bg-teal-100 rounded-full h-16 w-16 mx-auto"><svg class="h-8 w-8 teal-text" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div>
+                        <h3 class="text-xl font-bold mb-2">Experienced Medical Team</h3>
+                        <p>Our board-certified doctors and compassionate staff provide the highest standard of medical care.</p>
+                    </div>
+                    <div class="text-center p-8 bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 fade-in-up" style="animation-delay: 0.4s;">
+                        <div class="flex justify-center items-center mb-4 bg-teal-100 rounded-full h-16 w-16 mx-auto"><svg class="h-8 w-8 teal-text" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg></div>
+                        <h3 class="text-xl font-bold mb-2">Modern & Welcoming Facility</h3>
+                        <p>We provide a clean, safe, and comfortable environment designed for your healing and peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold section-title fade-in-up">Our Core Services</h2>
+                    <p class="text-gray-600 mt-3 max-w-2xl mx-auto fade-in-up">Comprehensive medical services for every stage of life.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 fade-in-up">
+                        <img src="https://placehold.co/600x400/008080/FFFFFF?text=" alt="General Medicine" class="w-full h-64 object-cover">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-3 section-title">General Medicine</h3>
+                            <p class="text-gray-600 mb-4">From routine check-ups and preventative care to the diagnosis and treatment of common illnesses, our general medicine department is your first point of contact for trusted family healthcare.</p>
+                            <a href="#" class="font-bold coral-text hover:underline">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 fade-in-up" style="animation-delay: 0.2s;">
+                        <img src="https://placehold.co/600x400/FF7F50/FFFFFF?text=" alt="Maternity Care" class="w-full h-64 object-cover">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-3 section-title">Maternity & Maternity</h3>
+                            <p class="text-gray-600 mb-4">We offer comprehensive and compassionate care for expectant mothers, including prenatal consultations, safe delivery services, and postnatal support to ensure a healthy journey for mother and child.</p>
+                            <a href="#" class="font-bold coral-text hover:underline">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet The Team Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold section-title fade-in-up">Meet Our Specialists</h2>
+                    <p class="text-gray-600 mt-3 max-w-2xl mx-auto fade-in-up">The dedicated and experienced professionals behind our care.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center fade-in-up">
+                        <img class="w-32 h-32 rounded-full mx-auto shadow-lg" src="https://placehold.co/200x200/008080/FFFFFF?text=Dr" alt="Doctor 1">
+                        <h4 class="text-lg font-bold mt-4">Dr. John Doe</h4>
+                        <p class="text-gray-500">Chief Medical Officer</p>
+                    </div>
+                    <div class="text-center fade-in-up" style="animation-delay: 0.2s;">
+                        <img class="w-32 h-32 rounded-full mx-auto shadow-lg" src="https://placehold.co/200x200/FF7F50/FFFFFF?text=Dr" alt="Doctor 2">
+                        <h4 class="text-lg font-bold mt-4">Dr. Jane Smith</h4>
+                        <p class="text-gray-500">Head of Maternity</p>
+                    </div>
+                    <div class="text-center fade-in-up" style="animation-delay: 0.4s;">
+                        <img class="w-32 h-32 rounded-full mx-auto shadow-lg" src="https://placehold.co/200x200/008080/FFFFFF?text=Dr" alt="Doctor 3">
+                        <h4 class="text-lg font-bold mt-4">Dr. Bisi Adebayo</h4>
+                        <p class="text-gray-500">General Physician</p>
+                    </div>
+                    <div class="text-center fade-in-up" style="animation-delay: 0.6s;">
+                        <img class="w-32 h-32 rounded-full mx-auto shadow-lg" src="https://placehold.co/200x200/FF7F50/FFFFFF?text=Dr" alt="Doctor 4">
+                        <h4 class="text-lg font-bold mt-4">Dr. Emeka Okafor</h4>
+                        <p class="text-gray-500">Pediatric Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-teal-50">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold section-title fade-in-up">Words From Our Patients</h2>
+                    <p class="text-gray-600 mt-3 max-w-2xl mx-auto fade-in-up">See what our community is saying about us.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg fade-in-up">
+                        <p class="text-gray-600 mb-4">"The doctors at Dyme Hospital were so attentive and caring throughout my pregnancy. I felt safe and supported from start to finish. Highly recommended!"</p>
+                        <p class="font-bold teal-text">- Adeola J.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg fade-in-up" style="animation-delay: 0.2s;">
+                        <p class="text-gray-600 mb-4">"My son had a high fever and the team here was fantastic. They were quick, professional, and very reassuring. Thank you for the excellent care."</p>
+                        <p class="font-bold teal-text">- Chinedu E.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Appointment Section -->
+        <section id="appointment" class="py-20 bg-teal-700 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold fade-in-up">Ready to See a Doctor?</h2>
+                <p class="text-lg mt-3 mb-8 max-w-2xl mx-auto fade-in-up">Booking an appointment is easy. Contact us via phone or email to schedule your visit today.</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 fade-in-up">
+                    <a href="tel:08034713240" class="btn-primary font-bold py-3 px-8 rounded-full text-lg w-full sm:w-auto">Call 08034713240</a>
+                    <a href="mailto:dymehospital@gmail.com" class="bg-white text-teal-600 font-bold py-3 px-8 rounded-full text-lg w-full sm:w-auto hover:bg-gray-100 transition duration-300">Email Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-10 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Dyme Hospital & Maternity</h3>
+                    <p class="text-gray-400">Your trusted partner in health, providing dedicated medical and maternity services to the Uyo community.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center justify-center md:justify-start">
+                            <svg class="h-5 w-5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                            <span>Uyo, Akwa Ibom State</span>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start">
+                            <svg class="h-5 w-5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                            <a href="tel:08034713240" class="hover:text-white transition">08034713240</a>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start">
+                            <svg class="h-5 w-5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                             <a href="mailto:dymehospital@gmail.com" class="hover:text-white transition">dymehospital@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 Dyme Hospital and Maternity. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- Animate On Scroll ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in-up').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+
+</body>
+</html>
+
