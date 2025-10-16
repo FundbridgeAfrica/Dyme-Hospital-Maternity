@@ -56,10 +56,9 @@
         }
         .fade-in-up {
             opacity: 0;
-            animation-fill-mode: forwards;
         }
         .is-visible {
-            animation: fadeInUp 0.8s ease-out;
+            animation: fadeInUp 0.8s ease-out forwards;
         }
     </style>
 </head>
@@ -99,9 +98,9 @@
         <!-- Hero Section -->
         <section id="home" class="hero-section text-white">
             <div class="container mx-auto px-6 py-28 md:py-40 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 animate-fade-in-up">Your Partner in Lifelong Health.</h1>
-                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto animate-fade-in-up" style="animation-delay: 0.2s;">Providing compassionate General and Maternity care for the Uyo community. Your health is our commitment.</p>
-                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in-up" style="animation-delay: 0.4s;">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 fade-in-up">Your Partner in Lifelong Health.</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto fade-in-up" style="animation-delay: 0.2s;">Providing compassionate General and Maternity care for the Uyo community. Your health is our commitment.</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 fade-in-up" style="animation-delay: 0.4s;">
                     <a href="#appointment" class="btn-primary font-bold py-3 px-8 rounded-full text-lg w-full sm:w-auto">Book an Appointment</a>
                     <a href="#services" class="bg-white text-teal-600 font-bold py-3 px-8 rounded-full text-lg w-full sm:w-auto hover:bg-gray-100 transition duration-300">Our Services</a>
                 </div>
@@ -144,7 +143,7 @@
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
                     <div class="bg-white rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 fade-in-up">
-                        <img src="https://placehold.co/600x400/008080/FFFFFF?text=" alt="General Medicine" class="w-full h-64 object-cover">
+                        <img src="https://placehold.co/600x400/008080/FFFFFF?text=GM&font=poppins" alt="General Medicine" class="w-full h-64 object-cover">
                         <div class="p-8">
                             <h3 class="text-2xl font-bold mb-3 section-title">General Medicine</h3>
                             <p class="text-gray-600 mb-4">From routine check-ups and preventative care to the diagnosis and treatment of common illnesses, our general medicine department is your first point of contact for trusted family healthcare.</p>
@@ -152,7 +151,7 @@
                         </div>
                     </div>
                     <div class="bg-white rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 fade-in-up" style="animation-delay: 0.2s;">
-                        <img src="https://placehold.co/600x400/FF7F50/FFFFFF?text=" alt="Maternity Care" class="w-full h-64 object-cover">
+                        <img src="https://placehold.co/600x400/FF7F50/FFFFFF?text=MC&font=poppins" alt="Maternity Care" class="w-full h-64 object-cover">
                         <div class="p-8">
                             <h3 class="text-2xl font-bold mb-3 section-title">Maternity & Maternity</h3>
                             <p class="text-gray-600 mb-4">We offer comprehensive and compassionate care for expectant mothers, including prenatal consultations, safe delivery services, and postnatal support to ensure a healthy journey for mother and child.</p>
@@ -172,22 +171,22 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                     <div class="text-center fade-in-up">
-                        <img class="w-32 h-32 rounded-full mx-auto shadow-lg" src="https://placehold.co/200x200/008080/FFFFFF?text=Dr" alt="Doctor 1">
+                        <img class="w-32 h-32 rounded-full mx-auto shadow-lg" src="https://placehold.co/200x200/008080/FFFFFF?text=JD&font=poppins" alt="Doctor 1">
                         <h4 class="text-lg font-bold mt-4">Dr. John Doe</h4>
                         <p class="text-gray-500">Chief Medical Officer</p>
                     </div>
                     <div class="text-center fade-in-up" style="animation-delay: 0.2s;">
-                        <img class="w-32 h-32 rounded-full mx-auto shadow-lg" src="https://placehold.co/200x200/FF7F50/FFFFFF?text=Dr" alt="Doctor 2">
+                        <img class="w-32 h-32 rounded-full mx-auto shadow-lg" src="https://placehold.co/200x200/FF7F50/FFFFFF?text=JS&font=poppins" alt="Doctor 2">
                         <h4 class="text-lg font-bold mt-4">Dr. Jane Smith</h4>
                         <p class="text-gray-500">Head of Maternity</p>
                     </div>
                     <div class="text-center fade-in-up" style="animation-delay: 0.4s;">
-                        <img class="w-32 h-32 rounded-full mx-auto shadow-lg" src="https://placehold.co/200x200/008080/FFFFFF?text=Dr" alt="Doctor 3">
+                        <img class="w-32 h-32 rounded-full mx-auto shadow-lg" src="https://placehold.co/200x200/008080/FFFFFF?text=BA&font=poppins" alt="Doctor 3">
                         <h4 class="text-lg font-bold mt-4">Dr. Bisi Adebayo</h4>
                         <p class="text-gray-500">General Physician</p>
                     </div>
                     <div class="text-center fade-in-up" style="animation-delay: 0.6s;">
-                        <img class="w-32 h-32 rounded-full mx-auto shadow-lg" src="https://placehold.co/200x200/FF7F50/FFFFFF?text=Dr" alt="Doctor 4">
+                        <img class="w-32 h-32 rounded-full mx-auto shadow-lg" src="https://placehold.co/200x200/FF7F50/FFFFFF?text=EO&font=poppins" alt="Doctor 4">
                         <h4 class="text-lg font-bold mt-4">Dr. Emeka Okafor</h4>
                         <p class="text-gray-500">Pediatric Specialist</p>
                     </div>
